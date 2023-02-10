@@ -1,0 +1,13 @@
+import java.lang.Math;
+import java.util.*;
+public class SquareRoot {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the number=");
+    int number = sc.nextInt();
+    double positiveSquareRoot = Math.sqrt(number);
+    double negativeSquareRoot = -Math.sqrt(number);
+    System.out.println("The positive square root of " + number + " is: " + positiveSquareRoot);
+    System.out.println("The negative square root of " + number + " is: " + negativeSquareRoot);
+  }
+}
