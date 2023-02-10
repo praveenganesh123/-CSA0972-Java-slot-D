@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+class freq
+{
+ public static void main(String args[])
+ {
+  Scanner input = new Scanner(System.in);
+  System.out.println("Enter the number of elements:");
+  int n = input.nextInt();
+  int count = 0;
+  ArrayList <Integer> al = new ArrayList<Integer>(n);
+  System.out.println("Enter the elements in an array");
+  for(int i=0;i<n;i++)
+  {
+   int num = input.nextInt();
+   al.add(num);
+  }
+  HashSet<Integer>hs = new HashSet<Integer>(al);
+  System.out.println("Element"+" "+"Frequency");
+  for(int x: hs)
+  {
+   count = 0;
+   for(int y: al)
+   {
+    if(x==y)
+     {
+      count+=1;
+     }
+    }
+    System.out.println(x+" "+count);
+    }
+  }
+}
