@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.Scanner;
+class decimsqcb
+{
+ public static void main(String args[])
+  {
+   Scanner input = new Scanner(System.in);
+   System.out.println("Enter the decimal number");
+   double num1 = input.nextDouble();
+   double squ = Math.pow(num1,(double) 2);
+   double cub = Math.pow(num1,(double) 3);
+   System.out.println("The square of the given decimal number is"+" "+squ);
+   System.out.println("The cube of the given decimal number is"+" "+cub);
+  }
+}
