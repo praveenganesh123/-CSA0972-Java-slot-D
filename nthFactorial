@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.Scanner;
+class Main
+{
+ public static void main(String args[])
+ {
+  Scanner input = new Scanner(System.in);
+  int count = 0;
+  int x = 0;
+  System.out.println("Enter the number");
+  int num = input.nextInt();
+  System.out.println("Enter the value of n inorder to find nth factor");
+  int n = input.nextInt();
+  for(int i=1;i<=num;i++)
+  {
+   if(num%i==0)
+   {
+    count+=1;
+    if(n == count)
+   {
+    x = i;
+    
+   }
+   }
+   
+  }
+ System.out.println("The"+" "+n+"th factor of the given number is"+" "+x);
+ System.out.println("The number of factors of the given number is:"+count);
+ }
+}
