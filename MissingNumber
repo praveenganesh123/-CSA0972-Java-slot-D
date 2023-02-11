@@ -1,0 +1,34 @@
+import java.util.*;
+import java.io.*;
+
+class missingnumber
+{
+public static void main(String args[])
+{
+
+Scanner sc = new Scanner(System.in);
+System.out.print("enter the n number:");
+int n = sc.nextInt();
+int inpuArray[] = new int[n];
+System.out.println("enter (n-1) numbers:");
+
+for(int i=0; i<=n-2; i++)
+
+
+{
+inpuArray[i] = sc.nextInt();
+}
+int sumOfAll = (n*(n+1))/2;
+int sumOfArray = 0;
+for (int i=0; i<=n-2; i++)
+{
+
+
+sumOfArray = sumOfAll+ inpuArray[i];
+}
+int missingNumber = sumOfAll - sumOfArray;
+System.out.println("missing Number is:" +missingNumber);
+}
+}
+
+
